@@ -1,0 +1,207 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.quitsmoking.MainActivity$PlaceholderFragment"
+    android:orientation="vertical"
+    android:background="FFF"
+    >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="100"
+        android:padding="10dip" >
+    <FrameLayout
+        android:id="@+id/frameStats"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="50"
+        >
+
+        <ImageButton
+            android:id="@+id/imageStats"
+            android:background="@drawable/squeky"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="top"
+            android:onClick="onClickStats"
+
+            />
+           <TextView
+               android:id="@+id/textStats"
+               android:layout_width="120dp"
+               android:layout_height="135dp"
+               android:text="Stats"
+               android:textStyle="bold"
+               android:textSize="@dimen/activity_horizontal_margin"
+               android:textColor="#1D8BD1"
+               android:layout_gravity="center|bottom"
+               android:gravity="center|bottom"
+               android:enabled="false"
+               android:focusable="true"
+               android:focusableInTouchMode="true" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameCommunity"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            >
+            <ImageButton
+                android:id="@+id/imageCommunity"
+                android:background="@drawable/bird"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="top"
+                android:onClick="onClickCommunity"
+
+                />
+            <TextView
+                android:id="@+id/textCommunity"
+                android:layout_width="120dp"
+                android:layout_height="135dp"
+                android:text="Community"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textColor="#1D8BD1"
+                android:layout_gravity="center|fill_horizontal|bottom|left|right|top"
+                android:gravity="center|bottom"
+                android:focusable="false" />
+        </FrameLayout>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dip" 
+        android:weightSum="100"
+        >
+        <FrameLayout
+            android:id="@+id/frameHeart"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            >
+            <ImageButton
+                android:id="@+id/imageHeart"
+                android:background="@drawable/dog"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="top"
+                android:onClick="onClickHeart"
+
+                />
+            <TextView
+                android:id="@+id/textHeart"
+                android:layout_width="120dp"
+                android:layout_height="135dp"
+                android:text="Health"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textColor="#1D8BD1"
+                android:layout_gravity="center|bottom"
+                android:gravity="center|bottom"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            >
+            <ImageButton
+                android:id="@+id/imageGallery"
+                android:background="@drawable/bell"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="top"
+                android:onClick="onClickGallery"
+
+                />
+            <TextView
+                android:id="@+id/textGallery"
+                android:layout_width="120dp"
+                android:layout_height="135dp"
+                android:text="Gallery"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textColor="#1D8BD1"
+                android:layout_gravity="center|fill_horizontal|bottom|left|right|top"
+                android:gravity="center|bottom"
+                android:focusable="false" />
+        </FrameLayout>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dip"
+        android:weightSum="100" >
+        <FrameLayout
+            android:id="@+id/frameChart"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            >
+            <ImageButton
+                android:id="@+id/imageChart"
+                android:background="@drawable/whistle"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="top"
+                android:onClick="onClickChart"
+                />
+            <TextView
+                android:id="@+id/textChart"
+                android:layout_width="120dp"
+                android:layout_height="135dp"
+                android:text="Chart"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textColor="#1D8BD1"
+                android:layout_gravity="center|bottom"
+                android:gravity="center|bottom"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+
+            >
+            <ImageButton
+                android:onClick="onClickSetting"
+                android:id="@+id/imageSettings"
+                android:background="@drawable/settings"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="top"
+                />
+            <TextView
+                android:id="@+id/textSettings"
+                android:layout_width="120dp"
+                android:layout_height="135dp"
+                android:text="Preferences"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textColor="#1D8BD1"
+                android:layout_gravity="center|bottom"
+                android:gravity="center|bottom"
+                android:focusable="false" />
+        </FrameLayout>
+
+    </TableRow>
+
+</TableLayout>
